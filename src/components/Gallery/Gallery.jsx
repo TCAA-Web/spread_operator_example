@@ -1,10 +1,11 @@
 import React from "react";
 import style from "./Gallery.module.scss";
 
-export const Gallery = ({ children }) => {
+// Our Gallery component that displays a grid and a title
+export const Gallery = ({ children, title }) => {
   return (
     <div>
-      Gallery
+      <h1>{title}</h1>
       <section className={style.galleryStyle}>{children}</section>
     </div>
   );
